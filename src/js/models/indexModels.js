@@ -1,21 +1,15 @@
-const suma = (uno, dos) => {
+export const suma = (uno, dos) => {
     return uno + dos
 }
-export default suma;
 
-// const rest = (uno, dos) => {
-//     return uno - dos
-// }
-// export default rest;
+export const rest = (uno, dos) => {
+    return uno - dos
+}
 
-// const mult = (uno, dos) => {
-//     return uno * dos
-// }
-// export default mult;
+export const mult = (uno, dos) => {
+    return uno * dos
+}
 
-
-// const divi = (uno, dos) => {
-//     return uno / dos;
-// }
-// export default divi;
-
+export const divi = (uno, dos) => {
+    return uno / dos;
+}

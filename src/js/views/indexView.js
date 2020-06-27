@@ -7,26 +7,15 @@ export const parseInputs = (input) => {
     return parseInt(input.value)
 }
 
-export const clearA = () =>{
+export const clearResult = () =>{
     return resul.innerHTML = ''
 }
+
+export const clearInputs = () => {
+    return document.getElementById("#numero1").value = "";
+ }
 
 export const resultadoView = (res) => {
     resul.insertAdjacentHTML('beforeend', res)
 }
 
-export const clear = () => {
-    document.getElementById("resu").value= ' ';
-  }
-
-//export const getInput = () => elements.searchInput.value;
-
-// export const clearNum = () => {
-//     elements.inputNum1.innerHTML = '';
-//     elements.inputNum2.innerHTML = '';
-// }
-
-// export const clearResul = () => {
-//     elements.searchReslist.innerHTML = '';
-//     elements.searchResPages.innerHTML = '';
-// }

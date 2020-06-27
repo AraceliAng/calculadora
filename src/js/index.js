@@ -1,42 +1,42 @@
-import suma from './models/indexModels';
+import * as indexModels from './models/indexModels';
 import * as indexView from './views/indexView';
 
 
 document.querySelector("#suma").addEventListener(("click"), () => {
-    indexView.clear();
+    indexView.clearResult();
 
     const numero1 = indexView.parseInputs(indexView.inputNum1)
     const numero2 = indexView.parseInputs(indexView.inputNum2)
-    const resultado = suma(numero1,numero2)
+    const resultado = indexModels.suma(numero1,numero2)
 
     return indexView.resultadoView(resultado)
 })
 
 document.querySelector("#resta").addEventListener(("click"), () => {
-    // indexView.clearNum();
+    indexView.clearResult();
 
     const numero1 = indexView.parseInputs(indexView.inputNum1)
     const numero2 = indexView.parseInputs(indexView.inputNum2)
-    const resultado = resta(numero1,numero2)
+    const resultado = indexModels.rest(numero1,numero2)
 
     return indexView.resultadoView(resultado)
 })
 document.querySelector("#multiplicacion").addEventListener(("click"), () => {
-    // indexView.clearNum();
+    indexView.clearResult();
 
     const numero1 = indexView.parseInputs(indexView.inputNum1)
     const numero2 = indexView.parseInputs(indexView.inputNum2)
-    const resultado = multiplicacion(numero1,numero2)
+    const resultado = indexModels.mult(numero1,numero2)
 
     return indexView.resultadoView(resultado)
 })
 
 document.querySelector("#division").addEventListener(("click"), () => {
-    // indexView.clearNum();
+    indexView.clearResult();
 
     const numero1 = indexView.parseInputs(indexView.inputNum1)
     const numero2 = indexView.parseInputs(indexView.inputNum2)
-    const resultado = division(numero1,numero2)
+    const resultado = indexModels.divi(numero1,numero2)
 
     return indexView.resultadoView(resultado)
 })
